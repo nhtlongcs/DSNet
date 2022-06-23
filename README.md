@@ -42,8 +42,8 @@ unzip dsnet_datasets.zip
 
 If the Dropbox link is unavailable to you, try downloading from below links.
 
-+ (Baidu Cloud) Link: https://pan.baidu.com/s/1LUK2aZzLvgNwbK07BUAQRQ Extraction Code: x09b
-+ (Google Drive) https://drive.google.com/file/d/11ulsvk1MZI7iDqymw9cfL7csAYS0cDYH/view?usp=sharing
+- (Baidu Cloud) Link: https://pan.baidu.com/s/1LUK2aZzLvgNwbK07BUAQRQ Extraction Code: x09b
+- (Google Drive) https://drive.google.com/file/d/11ulsvk1MZI7iDqymw9cfL7csAYS0cDYH/view?usp=sharing
 
 Now the datasets structure should look like
 
@@ -185,9 +185,9 @@ python infer.py anchor-based --ckpt-path ../models/custom/checkpoint/custom.yml.
 
 We gratefully thank the below open-source repo, which greatly boost our research.
 
-+ Thank [KTS](https://github.com/pathak22/videoseg/tree/master/lib/kts) for the effective shot generation algorithm.
-+ Thank [DR-DSN](https://github.com/KaiyangZhou/pytorch-vsumm-reinforce) for the pre-processed public datasets.
-+ Thank [VASNet](https://github.com/ok1zjf/VASNet) for the training and evaluation pipeline.
+- Thank [KTS](https://github.com/pathak22/videoseg/tree/master/lib/kts) for the effective shot generation algorithm.
+- Thank [DR-DSN](https://github.com/KaiyangZhou/pytorch-vsumm-reinforce) for the pre-processed public datasets.
+- Thank [VASNet](https://github.com/ok1zjf/VASNet) for the training and evaluation pipeline.
 
 ## Citation
 

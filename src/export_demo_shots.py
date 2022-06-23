@@ -5,21 +5,26 @@ import numpy as np
 
 from kts.cpd_auto import cpd_auto
 
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset', type=str, required=True)
+    parser.add_argument('--video-number', type=str, default='video_41')
     args = parser.parse_args()
 
     h5in = h5py.File(args.dataset, 'r')
-    h5out = h5py.File(args.dataset + '.custom', 'w')
+    h5out = h5py.File(args.dataset + '.export_demo', 'w')
+    run = 0
 
     for video_name, video_file in h5in.items():
+        if (video_name != args.video_number):
+          continue
+        #print(video_name)
         features = video_file['features'][...].astype(np.float32)
         gtscore = video_file['gtscore'][...].astype(np.float32)
         gtsummary = video_file['gtsummary'][...].astype(np.float32)
 
         seq_len = gtscore.size
+        #print(seq_len)
         n_frames = seq_len * 15 - 1
         picks = np.arange(0, seq_len) * 15
 
