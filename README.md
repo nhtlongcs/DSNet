@@ -9,7 +9,7 @@ A PyTorch implementation of our paper [DSNet: A Flexible Detect-to-Summarize Net
 
 ## Getting Started
 
-This project is developed on Ubuntu 16.04 with CUDA 9.0.176.
+This modify version is developed on Ubuntu 18.04 with CUDA 11.3
 
 First, clone this project to your local environment.
 
@@ -17,17 +17,12 @@ First, clone this project to your local environment.
 git clone https://github.com/li-plus/DSNet.git
 ```
 
-Create a virtual environment with python 3.6, preferably using [Anaconda](https://www.anaconda.com/).
-
-```sh
-conda create --name dsnet python=3.6
-conda activate dsnet
-```
-
+Install Pytorch 1.11.0+cu113 (Official guide)
 Install python dependencies.
 
 ```sh
-pip install -r requirements.txt
+pip install h5py ortools pyyaml
+pip install torch-scatter torch-sparse torch-cluster torch-geometric -f https://data.pyg.org/whl/torch-1.11.0+cu113.html
 ```
 
 ## Datasets Preparation
